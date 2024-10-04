@@ -11,7 +11,8 @@ import nltk
 nltk.download('stopwords')
 
 # Load dataset
-data = pd.read_csv("C:\\Users\\luhar\\Desktop\\1234\\Restaurant_Reviews.tsv", sep='\t', quoting=3)
+data = pd.read_csv("data/Restaurant_Reviews.tsv", sep='\t', quoting=3)
+
 stop_words = set(stopwords.words('english'))
 ps = PorterStemmer()
 
